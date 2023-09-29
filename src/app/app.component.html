@@ -1,13 +1,13 @@
 <!-- swagger-upload.component.html -->
 <div>
-  <h2>Upload Swagger JSON/YAML </h2>
-  <p> json/yaml file less than 100 kb limit for this POC</p>
+  <h2>Upload Swagger JSON </h2>
+  <p> json file less than 100 kb limit for this POC</p>
   <p> NOTE : Do not upload sensitive data here</p>
-  <p> Sample swagger yaml :
+  <p> Sample swagger json :
     <a
-      href="https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/modules/openapi-generator/src/test/resources/2_0/petstore.yaml">Petstore.yaml</a>
+      href="https://api.jsonbin.io/v3/b/6516ffd654105e766fbb813e">Petstore.json</a>
   </p>
-  <input type="file" (change)="onFileChange($event)" accept=".json,.yaml">
+  <input type="file" (change)="onFileChange($event)" accept=".json">
   <button (click)="uploadSwagger()">Upload</button>
 </div>
 
